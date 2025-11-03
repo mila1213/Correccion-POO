@@ -7,7 +7,7 @@ public class SolicitanteSubsidio {
     private int cantidadVehiculos;
     private boolean viveEnEcuador;
 
-    // Constructor sin validaciones
+
     public SolicitanteSubsidio(String nombreCompleto, String cedula, double ingresosMensuales, int cantidadVehiculos, boolean viveEnEcuador) {
         this.nombreCompleto = nombreCompleto;
         this.cedula = cedula;
@@ -16,7 +16,7 @@ public class SolicitanteSubsidio {
         this.viveEnEcuador = viveEnEcuador;
     }
 
-    // Getters y Setters
+
     public String getNombreCompleto() {
         return nombreCompleto;
     }
@@ -64,7 +64,6 @@ public class SolicitanteSubsidio {
                 viveEnEcuador;
     }
 
-    // Imprime el resultado
     public void generarResultado() {
         if (subsidioAprobado()) {
             System.out.println("Subsidio aprobado.");
@@ -82,7 +81,7 @@ public class SolicitanteSubsidio {
         }
     }
 
-    // toString normal
+  
     public String toString() {
         return "Nombre: " + nombreCompleto +
                 "\nCédula: " + cedula +
@@ -91,7 +90,7 @@ public class SolicitanteSubsidio {
                 "\nReside en Ecuador: " + (viveEnEcuador ? "Sí" : "No");
     }
 
-    // Reglas del subsidio
+    
     public static void mostrarReglasSubsidio() {
         System.out.println("Requisitos para recibir el subsidio:");
         System.out.println("- Ingresos mensuales entre $470 y $1200");
@@ -99,7 +98,7 @@ public class SolicitanteSubsidio {
         System.out.println("- Residir en Ecuador");
     }
 
-    // Consumo mensual
+   
     public double calcularConsumoMensual() {
         double kmMensuales = 800;
         return kmMensuales / 40;
